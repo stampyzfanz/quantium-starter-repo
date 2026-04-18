@@ -1,0 +1,9 @@
+[project]
+name = "quantium-starter-repo"
+version = "0.1.0"
+description = "Qantium Forage project using uv"
+requires-python = ">=3.11"
+dependencies = [
+  "dash",
+  "pandas",
+]
