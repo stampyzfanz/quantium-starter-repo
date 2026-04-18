@@ -20,6 +20,18 @@ jobs:
       - name: Set up uv
         uses: astral-sh/setup-uv@v6
 
+      - name: Install Chromium and chromedriver
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium chromium-driver
+
+      - name: Verify browser tooling
+        shell: bash
+        run: |
+          chromium --version || true
+          chromedriver --version
+
       - name: Install dependencies
         shell: bash
         run: |
