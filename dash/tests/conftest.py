@@ -1,8 +1,6 @@
-import pytest
 from selenium.webdriver.chrome.options import Options
 
 
-@pytest.fixture
 def pytest_setup_options():
     # Use headless Chrome flags that are stable in CI containers.
     options = Options()
