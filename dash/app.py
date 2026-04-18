@@ -26,12 +26,12 @@ def build_figure(daily_sales: pd.DataFrame):
     fig = px.line(
         daily_sales,
         x="date",
-        y="sales ($)",
+        y="sales",
         title="Pink Morsel Sales Over Time",
     )
     fig.update_layout(
         xaxis_title="Date",
-        yaxis_title="Sales",
+        yaxis_title="Sales ($)",
         template="plotly_white",
     )
     cutoff_date = "2021-01-15"
